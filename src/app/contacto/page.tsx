@@ -100,7 +100,7 @@ export default function ContactoPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Teléfono</h3>
-                    <p className="text-gray-600">+57 (1) 123-4567</p>
+                    <p className="text-gray-600">+57 3166575620</p>
                   </div>
                 </div>
 
@@ -110,7 +110,7 @@ export default function ContactoPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Dirección</h3>
-                    <p className="text-gray-600">Bogotá, Colombia</p>
+                    <p className="text-gray-600">Cali, Colombia</p>
                   </div>
                 </div>
               </div>
@@ -118,7 +118,7 @@ export default function ContactoPage() {
 
             {/* Formulario de Contacto */}
             <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Solicitar Consulta</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Solicitar consulta</h2>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
@@ -212,7 +212,7 @@ export default function ContactoPage() {
               <h4 className="font-semibold mb-4">Enlaces</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><Link href="/" className="hover:text-white transition-colors">Inicio</Link></li>
-                <li><Link href="/servicios" className="hover:text-white transition-colors">Nuestros Servicios</Link></li>
+                <li><Link href="/servicios" className="hover:text-white transition-colors">Nuestros servicios</Link></li>
                 <li><Link href="/equipo" className="hover:text-white transition-colors">Nuestro equipo</Link></li>
                 <li><Link href="/archivos" className="hover:text-white transition-colors">Documentos</Link></li>
               </ul>
@@ -221,9 +221,9 @@ export default function ContactoPage() {
             <div>
               <h4 className="font-semibold mb-4">Servicios</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>Servicios Penales</li>
+                <li>Servicios penales</li>
                 <li>Disciplinarios</li>
-                <li>Responsabilidad Fiscal</li>
+                <li>Responsabilidad fiscal</li>
                 <li>Consultoría Legal</li>
               </ul>
             </div>
@@ -232,14 +232,14 @@ export default function ContactoPage() {
               <h4 className="font-semibold mb-4">Contacto</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>contacto@escobarleonabogados.com</li>
-                <li>+57 (1) 123-4567</li>
-                <li>Bogotá, Colombia</li>
+                <li>+57 3166575620</li>
+                <li>Cali, Colombia</li>
               </ul>
             </div>
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Escobar León Abogados. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Escobar León Abogados. Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>

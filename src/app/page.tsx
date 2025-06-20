@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 interface FileInfo {
   url: string;
@@ -89,7 +89,7 @@ export default function HomePage() {
               Escobar León Abogados
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
-              Firma de abogados especializada en servicios penales, disciplinarios y responsabilidad fiscal. 
+              Firma de abogados especializada en servicios penales, disciplinarios y Responsabilidad fiscal. 
               Caracterizada por ser preventiva, personalizada, eficiente y reactiva.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -114,7 +114,7 @@ export default function HomePage() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Nuestros Servicios</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Nuestros servicios</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Ofrecemos servicios legales especializados con los más altos estándares de calidad y ética profesional.
             </p>
@@ -123,7 +123,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
               <div className="text-4xl mb-4">⚖️</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Servicios Penales</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Servicios penales</h3>
               <p className="text-gray-600">
                 Defensa penal especializada con enfoque preventivo y estratégico para proteger sus derechos.
               </p>
@@ -139,7 +139,7 @@ export default function HomePage() {
             
             <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
               <div className="text-4xl mb-4">📋</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Responsabilidad Fiscal</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Responsabilidad fiscal</h3>
               <p className="text-gray-600">
                 Gestión integral en materia fiscal con enfoque en la prevención y solución de controversias.
               </p>
@@ -152,7 +152,7 @@ export default function HomePage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Documentos y Recursos</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Documentos y recursos</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Acceda a documentos legales, formularios y recursos importantes para su caso.
             </p>
@@ -246,19 +246,26 @@ export default function HomePage() {
                   <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600 mx-auto"></div>
                 </div>
               ) : imageFiles.length > 0 ? (
-                <div className="grid grid-cols-2 gap-2">
-                  {imageFiles.slice(0, 4).map((file, index) => (
-                    <div key={index} className="aspect-square bg-white rounded border border-gray-200 overflow-hidden">
-                      <Image
-                        src={file.url}
-                        alt={file.originalName}
-                        width={100}
-                        height={100}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  ))}
-                </div>
+                <>
+                  <div className="text-center">
+                    <p className="text-gray-500 text-sm">Galería en mantenimiento.</p>
+                  </div>
+                  {/*
+                  <div className="grid grid-cols-2 gap-2">
+                    {imageFiles.slice(0, 4).map((file, index) => (
+                      <div key={index} className="aspect-square bg-white rounded border border-gray-200 overflow-hidden">
+                        <Image
+                          src={file.url}
+                          alt={file.originalName}
+                          width={100}
+                          height={100}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                  */}
+                </>
               ) : (
                 <p className="text-gray-500 text-sm">No hay imágenes disponibles</p>
               )}
@@ -292,17 +299,17 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center">
                   <span className="text-2xl mr-3">📞</span>
-                  <span>+57 (1) 123-4567</span>
+                  <span>+57 3166575620</span>
                 </div>
                 <div className="flex items-center">
                   <span className="text-2xl mr-3">📍</span>
-                  <span>Bogotá, Colombia</span>
+                  <span>Cali, Colombia</span>
                 </div>
               </div>
             </div>
             
             <div className="bg-white p-8 rounded-lg text-gray-900">
-              <h3 className="text-xl font-semibold mb-4">Solicitar Consulta</h3>
+              <h3 className="text-xl font-semibold mb-4">Solicitar consulta</h3>
               <form className="space-y-4">
                 <div>
                   <input
@@ -351,7 +358,7 @@ export default function HomePage() {
             <div>
               <h3 className="text-xl font-bold mb-4">Escobar León Abogados</h3>
               <p className="text-gray-400">
-                Firma de abogados especializada en servicios penales, disciplinarios y responsabilidad fiscal.
+                Firma de abogados especializada en servicios penales, disciplinarios y Responsabilidad fiscal.
               </p>
             </div>
             
@@ -359,7 +366,7 @@ export default function HomePage() {
               <h4 className="font-semibold mb-4">Enlaces</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><Link href="/" className="hover:text-white transition-colors">Inicio</Link></li>
-                <li><Link href="/servicios" className="hover:text-white transition-colors">Nuestros Servicios</Link></li>
+                <li><Link href="/servicios" className="hover:text-white transition-colors">Nuestros servicios</Link></li>
                 <li><Link href="/equipo" className="hover:text-white transition-colors">Nuestro equipo</Link></li>
                 <li><Link href="/archivos" className="hover:text-white transition-colors">Documentos</Link></li>
               </ul>
@@ -368,9 +375,9 @@ export default function HomePage() {
             <div>
               <h4 className="font-semibold mb-4">Servicios</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>Servicios Penales</li>
+                <li>Servicios penales</li>
                 <li>Disciplinarios</li>
-                <li>Responsabilidad Fiscal</li>
+                <li>Responsabilidad fiscal</li>
                 <li>Consultoría Legal</li>
               </ul>
             </div>
@@ -379,14 +386,14 @@ export default function HomePage() {
               <h4 className="font-semibold mb-4">Contacto</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>contacto@escobarleonabogados.com</li>
-                <li>+57 (1) 123-4567</li>
-                <li>Bogotá, Colombia</li>
+                <li>+57 3166575620</li>
+                <li>Cali, Colombia</li>
               </ul>
             </div>
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Escobar León Abogados. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Escobar León Abogados. Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>
