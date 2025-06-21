@@ -3,36 +3,6 @@ import Link from 'next/link';
 export default function EquipoPage() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <div className="flex items-center">
-              <Link href="/" className="text-2xl font-bold text-gray-900">
-                Escobar León Abogados
-              </Link>
-            </div>
-            <nav className="hidden md:flex space-x-8">
-              <Link href="/" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-                Inicio
-              </Link>
-              <Link href="/servicios" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-                Nuestros servicios
-              </Link>
-              <Link href="/equipo" className="text-blue-600 font-medium">
-                Nuestro equipo
-              </Link>
-              <Link href="/archivos" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-                Documentos
-              </Link>
-              <Link href="/contacto" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-                Contáctenos
-              </Link>
-            </nav>
-          </div>
-        </div>
-      </header>
-
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -202,8 +172,8 @@ export default function EquipoPage() {
               <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🤝</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2">Confianza</h3>
-              <p className="text-blue-100">Construimos relaciones de confianza duraderas con nuestros clientes.</p>
+              <h3 className="text-lg font-semibold mb-2">Compromiso</h3>
+              <p className="text-blue-100">Nos comprometemos con los intereses de nuestros clientes.</p>
             </div>
 
             <div className="text-center">

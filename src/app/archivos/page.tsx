@@ -66,26 +66,24 @@ export default function ArchivosPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <div className="bg-white shadow-sm border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-            <div>
-              <h1 className="text-3xl font-bold text-gray-900">
-                Archivos - Escobar León Abogados
-              </h1>
-              <p className="mt-2 text-gray-600">
-                Documentos y archivos disponibles para consulta
-              </p>
-            </div>
-            <div className="mt-4 md:mt-0">
-              <Link
-                href="/"
-                className="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
-              >
-                ← Volver al inicio
-              </Link>
-            </div>
+      {/* Título y descripción */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+          <div>
+            <h1 className="text-3xl font-bold text-gray-900">
+              Archivos - Escobar León Abogados
+            </h1>
+            <p className="mt-2 text-gray-600">
+              Documentos y archivos disponibles para consulta
+            </p>
+          </div>
+          <div className="mt-4 md:mt-0">
+            <Link
+              href="/"
+              className="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+            >
+              ← Volver al inicio
+            </Link>
           </div>
         </div>
       </div>
